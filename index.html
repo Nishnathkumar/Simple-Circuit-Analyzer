@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Circuit Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Simple Circuit Analyzer</h1>
+        <form id="circuitForm">
+            <label for="circuitType">Select Circuit Type:</label>
+            <select id="circuitType">
+                <option value="series">Series</option>
+                <option value="parallel">Parallel</option>
+            </select>
+
+            <label for="resistors">Enter Resistor Values (comma separated):</label>
+            <input type="text" id="resistors" placeholder="e.g. 100, 200, 300" required>
+
+            <button type="button" onclick="calculateResistance()">Calculate</button>
+        </form>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
